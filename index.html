@@ -262,13 +262,16 @@
     margin-bottom: 32px;
     display: flex;
     align-items: baseline;
-    gap: 16px;
     flex-wrap: wrap;
   }
+  .hero-speaker-label,
   .hero-speaker-affiliation {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.7);
     letter-spacing: 0.05em;
+  }
+  .hero-speaker-label::after {
+    content: '：';
   }
   .hero-speaker-name {
     font-family: 'Noto Serif JP', serif;
@@ -276,6 +279,7 @@
     font-weight: 700;
     color: var(--white);
     letter-spacing: 0.12em;
+    margin-left: 16px;
   }
   .hero .cta-note { color: rgba(255, 255, 255, 0.7); }
   .hero-photo {
@@ -804,7 +808,26 @@
     .hero-eyebrow { font-size: 11px; margin-bottom: 22px; }
     .hero-info { flex-direction: column; align-items: flex-start; gap: 14px; padding: 18px 0; }
     .hero-info-right { margin-left: 0; text-align: left; }
-    .hero-speaker { flex-direction: column; align-items: flex-start; gap: 6px; }
+    .hero-speaker { display: block; }
+    .hero-speaker-label {
+      display: block;
+      color: var(--accent);
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+    .hero-speaker-label::after { content: ''; }
+    .hero-speaker-affiliation {
+      display: block;
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+    .hero-speaker-name {
+      display: block;
+      margin-left: 0;
+      font-size: 20px;
+    }
     .hero-photo { max-width: 260px; }
     .hero-photo::before { width: 60px; height: 60px; top: -12px; right: -12px; }
     .hero-photo::after { width: 90px; height: 90px; bottom: -12px; left: -12px; }
@@ -902,7 +925,8 @@
       <div class="hero-deadline">申込締切：7月1日(水) 23:59</div>
 
       <div class="hero-speaker">
-        <span class="hero-speaker-affiliation">講師：一般社団法人 自立した人と組織を育成する協会 代表理事</span>
+        <span class="hero-speaker-label">講師</span>
+        <span class="hero-speaker-affiliation">一般社団法人 自立した人と組織を育成する協会 代表理事</span>
         <span class="hero-speaker-name">下田 直人</span>
       </div>
 
