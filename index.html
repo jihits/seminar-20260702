@@ -25,6 +25,10 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
+  .sp-br { display: none; }
+  @media (max-width: 640px) {
+    .sp-br { display: inline; }
+  }
   body {
     font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text);
@@ -840,6 +844,8 @@
     .details-table th { width: 35%; }
     .faq-item { padding: 20px; }
     .btn-cta { padding: 16px 40px; font-size: 16px; width: 100%; max-width: 340px; }
+    .cta-note { font-size: 12.5px; }
+    .problem-emphasis { font-size: 18px; }
     .header-cta { padding: 8px 14px; font-size: 12px; flex-shrink: 0; }
     .logo img { height: 44px; }
     header .container { gap: 12px; }
@@ -946,16 +952,16 @@
     <span class="section-label">SUCH PROBLEMS?</span>
     <h2 class="section-title">こんなご相談、<br>顧問先から受けていませんか</h2>
     <ul class="problem-list">
-      <li>若手社員が定着しない。ある日突然、退職を申し出てくる</li>
-      <li>メンタル不調者が出ている。休職・復職の対応に追われている</li>
+      <li>若手社員が定着しない。<br class="sp-br">ある日突然、退職を申し出てくる</li>
+      <li>メンタル不調者が出ている。<br class="sp-br">休職・復職の対応に追われている</li>
       <li>管理職と部下の関係がうまくいっていない</li>
-      <li>社員がなかなか主体的に動かない。会議で発言が出ない</li>
+      <li>社員がなかなか主体的に動かない。<br class="sp-br">会議で発言が出ない</li>
     </ul>
     <div class="problem-bridge">
       <p>こうした相談を受けたとき、就業規則の整備や制度面のアドバイスはできても、「この職場で、いま何が起きているのか」までは踏み込めず、もどかしさを感じたことはないでしょうか。</p>
       <p>手続きや制度対応だけでは、顧問先の本当の悩みに応えきれない。そんな実感を持つ社労士の方は、決して少なくありません。</p>
     </div>
-    <p class="problem-emphasis">離職もメンタル不調も、ある日突然始まるわけではありません。<br>その手前には、必ず「組織の状態」が表れています。</p>
+    <p class="problem-emphasis">離職もメンタル不調も、<br class="sp-br">ある日突然始まるわけではありません。<br>その手前には、必ず「組織の状態」が<br class="sp-br">表れています。</p>
   </div>
 </section>
 
@@ -1174,8 +1180,8 @@
 
 <section class="final-cta">
   <div class="container">
-    <h2>次に顧問先から「社員が辞めそうだ」と<br>相談されたとき、何と答えますか。</h2>
-    <p>その答えにつながる「見立ての視点」を、90分でお持ち帰りいただきます。<br>参加費は無料。当日ご参加できない方にもアーカイブ配信をお送りします。</p>
+    <h2>次に顧問先から<br class="sp-br">「社員が辞めそうだ」と<br>相談されたとき、<br class="sp-br">何と答えますか</h2>
+    <p>その答えにつながる「見立ての視点」を、<br class="sp-br">90分でお持ち帰りいただきます。<br>参加費は無料。当日ご参加できない方にも<br class="sp-br">アーカイブ配信をお送りします。</p>
     <p class="final-cta-deadline">申込締切：2026年7月1日(水) 23:59</p>
     <a href="https://forms.cloud.microsoft/r/7333N3vCcb" target="_blank" rel="noopener" class="btn-cta">無料で申し込む</a>
     <span class="cta-note">所要1分。お名前・メールアドレスなど簡単な項目のみです。</span>
