@@ -586,17 +586,9 @@
     background: var(--bg-soft);
     border-left: 4px solid var(--accent);
     padding: 24px 28px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
   }
-  /* 書影画像をお持ちの場合は、下の .speaker-book-cover の img を有効にしてください */
-  .speaker-book-cover img {
-    width: 88px;
-    height: auto;
-    display: block;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
+  .speaker-book-entry { margin-top: 14px; }
+  .speaker-book-entry:first-of-type { margin-top: 0; }
   .speaker-book-label {
     font-size: 12px;
     letter-spacing: 0.15em;
@@ -837,7 +829,7 @@
     .hero-photo::after { width: 90px; height: 90px; bottom: -12px; left: -12px; }
     .approach-highlight { padding: 24px 20px; font-size: 15px; }
     .target-box, .speaker-card { padding: 32px 24px; }
-    .speaker-book { flex-direction: column; align-items: flex-start; gap: 12px; padding: 20px; }
+    .speaker-book { padding: 20px; }
     .program-list li { padding: 22px 20px 22px 62px; }
     .program-list li::before { left: 20px; top: 22px; font-size: 17px; }
     .details-table th, .details-table td { padding: 16px; font-size: 14px; }
@@ -1062,20 +1054,19 @@
         </div>
       </div>
       <div class="speaker-bio">
-        <p>2002年、28歳の時に社会保険労務士事務所を開業。2005年に『なぜ、就業規則を変えると会社は儲かるのか？』（大和出版）を出版し、世の中の就業規則のあり方を大きく変える。</p>
+        <p>2002年、28歳の時に社会保険労務士事務所を開業。2005年に『なぜ、就業規則を変えると会社は儲かるのか？』（大和出版）を出版し、世の中の就業規則のあり方を大きく変える。2021年には『新標準の就業規則 多様化に対応した《戦略的》社内ルールのつくり方』(日本実業出版社)を出版。戦略的な就業規則づくりを通じて1,000社超の経営課題に関わり、「社労士に頼られる社労士」として専門家への指導も行う。</p>
         <p>また、2005年に原田メソッドを学び、以後、自ら実践するとともに、多くの経営者・士業の方に原田メソッドを伝えている。</p>
         <p>社会保険労務士としては、労働法務・心理学・東洋哲学をベースとして、コーチング・ファシリテーションのテクニックを駆使しながら、「人の心を温める組織づくり」に活動領域を広げている。組織に「働きがい」と「安心感」をもたらすことをモットーに、時には人事・労務管理のアドバイザーとして、時には研修講師として、時にはコンサルタントとして関わり、多くの実績をあげている。</p>
       </div>
       <div class="speaker-book">
-        <!-- 書影画像をお持ちの場合は、book.png 等を配置して以下のコメントを外してください
-        <div class="speaker-book-cover">
-          <img src="book.png" alt="『なぜ、就業規則を変えると会社は儲かるのか？』書影">
+        <div class="speaker-book-label">著書</div>
+        <div class="speaker-book-entry">
+          <div class="speaker-book-title">『新標準の就業規則 多様化に対応した《戦略的》社内ルールのつくり方』</div>
+          <div class="speaker-book-pub">日本実業出版社(2021年)</div>
         </div>
-        -->
-        <div>
-          <div class="speaker-book-label">著書</div>
-          <div class="speaker-book-title">『なぜ、就業規則を変えると会社は儲かるのか？』</div>
-          <div class="speaker-book-pub">大和出版（2005年）ほか</div>
+        <div class="speaker-book-entry">
+          <div class="speaker-book-title">『なぜ、就業規則を変えると会社は儲かるのか?』</div>
+          <div class="speaker-book-pub">大和出版(2005年)ほか著書多数</div>
         </div>
       </div>
     </div>
